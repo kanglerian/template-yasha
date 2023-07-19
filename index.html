@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flowbite.min.css" />
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+    <title>Yayasan Sharhana Educare</title>
+</head>
+
+<body class="bg-gray-100 md:space-y-5">
+
+    <nav class="bg-white border-gray-200 text-sm">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap">Yayasan Sharhana Educare</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-dropdown">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">Beranda</a>
+                    </li>
+                    <li>
+                        <button data-dropdown-toggle="dropdownAbout"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto gap-2">
+                            <span>Tentang Kami</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownAbout"
+                            class="z-100 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Visi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Misi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sejarah</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Struktur Organisasi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Majelis Ta'lim</a>
+                    </li>
+                    <li>
+                        <button data-dropdown-toggle="dropdownUsaha"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto gap-2">
+                            <span>Unit Usaha</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownUsaha"
+                            class="z-100 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Biro Psikologi Madina Gampita</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">PAUD Bintang Ilmu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bimbel Ysasha</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Berita</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Agenda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container mx-auto">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="z-[-1] relative h-56 overflow-hidden md:rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/header/kelas.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/header/lorong.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none text-white"
+                data-carousel-prev><i class="fa-solid fa-circle-chevron-left fa-2x"></i>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none text-white"
+                data-carousel-next><i class="fa-solid fa-circle-chevron-right fa-2x"></i>
+            </button>
+        </div>
+    </header>
+    <section class="container mx-auto py-2 md:p-0">
+        <div class="flex flex-wrap text-center">
+            <div class="w-full md:w-1/4">
+                <div class="space-y-2 p-4 bg-gray-100 md:hover:bg-gray-200 rounded-lg">
+                    <h3 class="text-md font-bold">Visi</h3>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam praesentium cum esse quia dolores in suscipit veniam accusantium, ullam amet?</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4">
+                <div class="space-y-2 p-4 bg-gray-100 md:hover:bg-gray-200 rounded-lg">
+                    <h3 class="text-md font-bold">Visi</h3>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam praesentium cum esse quia dolores in suscipit veniam accusantium, ullam amet?</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4">
+                <div class="space-y-2 p-4 bg-gray-100 md:hover:bg-gray-200 rounded-lg">
+                    <h3 class="text-md font-bold">Visi</h3>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam praesentium cum esse quia dolores in suscipit veniam accusantium, ullam amet?</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4">
+                <div class="space-y-2 p-4 bg-gray-100 md:hover:bg-gray-200 rounded-lg">
+                    <h3 class="text-md font-bold">Visi</h3>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam praesentium cum esse quia dolores in suscipit veniam accusantium, ullam amet?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto py-2 md:p-0">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:p-4">
+                <img src="./images/header/kelas.jpg" alt="" class="md:rounded-lg">
+            </div>
+            <div class="w-full md:w-1/2 space-y-3 p-4">
+                <h2 class="text-xl font-bold">Judul 1</h2>
+                <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos quaerat, minus accusantium ullam aliquid voluptatum illo numquam mollitia quam ipsa nulla commodi ducimus eveniet atque impedit sit fugit! Eum amet nam quis consequatur id, nulla modi voluptate in veniam autem cum obcaecati necessitatibus quae, exercitationem adipisci debitis. Expedita, nisi.</p>
+                <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-white text-sm">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/flowbite.min.js"></script>
+</body>
+
+</html>
